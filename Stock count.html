@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Stock Count</title>
+    <link rel="stylesheet" href="stock.css">
+</head>
+<body>
+    <div class="header">
+        <img src="Marcus Logo.png">
+        <h1>Fish & Chips United - Inventory</h1>
+    </div>
+    <div id="stock-form">
+        <h2>Stock Count</h2>
+        <form id="orderForm">
+            <label for="restaurant">Select Restaurant:</label>
+            <select id="restaurant">
+                <option value="newcastle">Newcastle</option>
+                <option value="alnwick">Alnwick</option>
+                <option value="newton">Newton Aycliffe</option>
+                <option value="thirsk">Thirsk</option>
+                <option value="whitby">Whitby</option>
+            </select>
+
+            <label for="fish">Fish (bags):</label>
+            <input type="number" id="fish" name="fish" min="0" required>
+
+            <label for="fries">French Fries (bags):</label>
+            <input type="number" id="fries" name="fries"min="0" required>
+
+            <label for="coke">Coke (packs):</label>
+            <input type="number" id="coke" min="0" required>
+
+            <button type="submit">Submit Count</button>
+        </form>
+    </div>
+
+    <script src="stock.js"></script>
+</body>
+</html>
